@@ -1,6 +1,215 @@
+<!--
+  Portfolio_JuanCarlos_Ugale.html
+  Single-file responsive portfolio for Juan Carlos Ugale
+  Instructions:
+  - Save this file as `index.html` and place your resume PDF in the same folder named `resume_Ugale_JuanCarlos.pdf` (or update the resume link below).
+  - Open locally in a browser to preview. To publish: push to a GitHub repo and enable GitHub Pages (or host on any static hosting).
+  - If you'd like a React or Tailwind version, tell me and I'll convert it.
+-->
+
 <!doctype html>
-<!-- Simplified header for brevity -->
-<html lang="en"><head><meta charset="utf-8"><title>Juan Carlos Ugale Portfolio</title></head><body>
-<h1>Portfolio of Juan Carlos Ugale</h1>
-<p>Static HTML portfolio prepared for GitHub Pages. See README.md for deployment steps.</p>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Juan Carlos Ugale — Portfolio</title>
+  <meta name="description" content="Portfolio of Juan Carlos Ugale — Integrations & Deployment Specialist, Backend Developer, IT Engineer">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.04);} 
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071028 0%, #071226 60%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,#16213a,#0b1220);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:var(--accent);box-shadow:0 6px 24px rgba(10,14,26,0.6)}
+    h1{margin:0;font-size:22px}
+    .sub{color:var(--muted);font-size:14px}
+    .actions{margin-left:auto;display:flex;gap:10px}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:white;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+
+    /* About */
+    .intro p{color:var(--muted);margin:10px 0 0}
+
+    /* Experience timeline */
+    .timeline{margin-top:16px}
+    .job{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .job:last-child{border-bottom:none}
+    .job .meta{min-width:120px;color:var(--muted);font-size:13px}
+    .job h4{margin:0;font-size:15px}
+    .job p{margin:6px 0;color:var(--muted);font-size:14px}
+
+    /* Skills */
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-weight:600;color:#cfe1ff;font-size:13px}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .proj h5{margin:0}
+    .proj p{margin:6px 0;color:var(--muted);font-size:14px}
+    .proj .tags{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+
+    /* Education / Contact */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .contact form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    textarea{min-height:110px}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media(max-width:980px){main{grid-template-columns:1fr} .actions{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JC</div>
+      <div>
+        <h1>Juan Carlos Ugale</h1>
+        <div class="sub">Integrations & Deployment Specialist • Backend Developer • IT Engineer</div>
+        <div class="sub" style="margin-top:6px">Taguig City | <a href="mailto:juan.carlos.ugale@gmail.com" style="color:inherit;text-decoration:underline">juan.carlos.ugale@gmail.com</a> | +63 976 494 4617</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./resume_Ugale_JuanCarlos.pdf" download>Download Resume</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/juan-carlos-ugale-86aa08272/" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card intro">
+          <h2 style="margin:0 0 6px">About</h2>
+          <p>Reliable and detail-oriented IT professional with experience in technical support, backend development, and deployment. Proficient in system integration, automation scripting, remote troubleshooting, and cloud access control. Strong communication skills and adaptability in fast-paced virtual environments.</p>
+
+          <div style="margin-top:16px">
+            <h3 style="margin:0 0 8px">Experience</h3>
+            <div class="timeline">
+
+              <div class="job">
+                <div class="meta">Apr 2025 – Present<br><strong>NOAH Business Apps</strong></div>
+                <div>
+                  <h4>Integrations & Deployment Specialist</h4>
+                  <p>Administered databases, integrated and tested systems across testing and live environments. Developed automation scripts to streamline deployments and executed Level 1 support for web applications and user access.</p>
+                </div>
+              </div>
+
+              <div class="job">
+                <div class="meta">Sept 2024 – Mar 2025<br><strong>Teleperformance</strong></div>
+                <div>
+                  <h4>IT Engineer</h4>
+                  <p>Managed tickets with ServiceNow, provided remote troubleshooting via PowerShell and AnyDesk, and supported software distribution and diagnostics.</p>
+                </div>
+              </div>
+
+              <div class="job">
+                <div class="meta">Jan 2024 – May 2024<br><strong>Advanced World Systems Inc</strong></div>
+                <div>
+                  <h4>Intern — Backend Developer</h4>
+                  <p>Built backend features using TypeScript and NestJS. Contributed to a business analytics system with emphasis on data privacy and reliable integrations.</p>
+                </div>
+              </div>
+
+              <div class="job">
+                <div class="meta">May 2023 – Jan 2024<br><strong>Naduma Enterprises Inc</strong></div>
+                <div>
+                  <h4>Sales Representative</h4>
+                  <p>Managed customer service operations, ensured accurate sales and inventory data entry and migration.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="margin-top:16px">
+            <h3 style="margin:0 0 8px">Technical Skills</h3>
+            <div class="skills">
+              <div class="skill">C#</div>
+              <div class="skill">Java</div>
+              <div class="skill">Python</div>
+              <div class="skill">TypeScript</div>
+              <div class="skill">PHP</div>
+              <div class="skill">HTML5 & JavaScript</div>
+              <div class="skill">NestJS</div>
+              <div class="skill">SQL / MySQL</div>
+              <div class="skill">AWS IAM</div>
+              <div class="skill">PowerShell</div>
+              <div class="skill">Jenkins</div>
+              <div class="skill">ServiceNow</div>
+              <div class="skill">Git & GitHub</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 style="margin:0 0 8px">Selected Projects</h3>
+          <div class="projects">
+
+            <div class="proj">
+              <h5>RECOMED — Patient Records & Appointment Queueing System</h5>
+              <p><em>Capstone Project</em> — Led backend development, ensured full functionality of records and queueing system, and coordinated deployment and integration testing.</p>
+              <div class="tags"><span class="tag">C#</span><span class="tag">SQL</span><span class="tag">Backend</span><span class="tag">Integration</span></div>
+            </div>
+
+            <div class="proj">
+              <h5>KIBO: SOS Made Easy</h5>
+              <p><em>Technopreneurship Project</em> — Led the team in design and implementation from concept to a working MVP. Focus on usability and deployment readiness.</p>
+              <div class="tags"><span class="tag">TypeScript</span><span class="tag">NestJS</span><span class="tag">Product</span></div>
+            </div>
+
+            <div class="proj">
+              <h5>Machine-Aided Detection & Classification of PCOS</h5>
+              <p><em>Data Mining Project</em> — Designed algorithms and trained predictive models; performed research and validation to ensure accuracy and uniqueness of the approach.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Data Mining</span><span class="tag">Machine Learning</span></div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Education</h3>
+          <div>
+            <strong>Saint Louis University</strong>
+            <div class="sub">B.S. Information Technology — Dean's Lister</div>
+            <p style="color:var(--muted);margin-top:8px">Represented the university in Innovation Generation Smart Sweep Season 3 (Top 50 nationwide). Loyalty awardee.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0 0 8px">Languages & Interests</h3>
+          <div style="color:var(--muted)">English • Tagalog • Ilocano</div>
+          <div style="margin-top:10px;color:var(--muted)">Interests: Cryptocurrency, Video Games, Cloud Technology, AI, Business</div>
+        </div>
+
+        <div class="card contact" style="margin-top:14px">
+          <h3 style="margin:0 0 8px">Contact</h3>
+          <form action="mailto:juan.carlos.ugale@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Message (brief)" required></textarea>
+            <button class="btn" type="submit">Send Email</button>
+          </form>
+
+          <div style="margin-top:12px">
+            <a class="btn ghost" href="https://github.com/" target="_blank">GitHub</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/juan-carlos-ugale-86aa08272/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Built with care • Juan Carlos Ugale • Last updated: Oct 22, 2025
+    </footer>
+  </div>
+</body>
+</html>
