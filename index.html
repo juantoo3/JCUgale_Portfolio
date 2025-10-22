@@ -20,7 +20,20 @@
     body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071028 0%, #071226 60%);color:#e6eef8;line-height:1.5}
     .container{max-width:1100px;margin:40px auto;padding:24px}
     header{display:flex;gap:20px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,#16213a,#0b1220);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:var(--accent);box-shadow:0 6px 24px rgba(10,14,26,0.6)}
+    .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(10,14,26,0.6);
+      }
+      
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
     h1{margin:0;font-size:22px}
     .sub{color:var(--muted);font-size:14px}
     .actions{margin-left:auto;display:flex;gap:10px}
@@ -67,7 +80,9 @@
 <body>
   <div class="container">
     <header>
-      <div class="avatar">JC</div>
+      <div class="avatar">
+        <img src="profile.jpg" alt="Juan Carlos Ugale" />
+      </div>
       <div>
         <h1>Juan Carlos Ugale</h1>
         <div class="sub">Integrations & Deployment Specialist • Backend Developer • IT Engineer</div>
