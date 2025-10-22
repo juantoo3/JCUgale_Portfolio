@@ -7,8 +7,7 @@ Welcome to my professional portfolio. This repository contains a single-page sta
 ---
 
 ### 🔗 Live Demo
-➡️ **[View Portfolio Website]([https://<your-github-username>.github.io/<repo-name>/](https://juantoo3.github.io/JCUgale_Portfolio/))**  
-(Replace with your actual GitHub Pages link once deployed.)
+➡️ [View Portfolio Website]([https://<your-github-username>.github.io/<repo-name>/](https://juantoo3.github.io/JCUgale_Portfolio/))
 
 ---
 
