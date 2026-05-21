@@ -41,7 +41,12 @@
       backdrop-filter:blur(20px);
       background:rgba(255,255,255,.65);
     }
-    
+
+	body.light-mode .card,
+    body.light-mode .proj{
+      border:1px solid rgba(15,23,42,.08);
+    }
+
     body.light-mode::before{
       opacity:.25;
     }
@@ -50,12 +55,11 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-      
       transition:
-    background-color .35s ease,
-    border-color .35s ease,
-    color .35s ease,
-    box-shadow .35s ease;
+      background-color .35s ease,
+      border-color .35s ease,
+      color .35s ease,
+      box-shadow .35s ease;
     }
     
     html{
@@ -520,8 +524,6 @@
         flex-wrap:wrap;
       }
     }
-    
-    /* LIGHT MODE TEXT FIXES */
 
     body.light-mode .btn.ghost{
       background:rgba(255,255,255,.9);
